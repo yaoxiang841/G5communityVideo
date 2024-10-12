@@ -94,6 +94,26 @@
         .nav-bar div.active {
             color: red;
         }
+	.icon-with-badge {
+		    position: relative;
+		    display: inline-block;
+		    font-size: 32px; /* 调整图标大小 */
+		    color: #333; /* 图标颜色 */
+		  }
+		  .notification-badge {
+		    min-width: 20px;
+		    height: 20px;
+		    background-color: red;
+		    color: white;
+		    border-radius: 50%;
+		    position: absolute;
+		    top: -5px; /* 调整小红点的位置 */
+		    right: -10px; /* 调整小红点的位置 */
+		    padding: 3px 6px;
+		    font-size: 12px;
+		    text-align: center;
+		    line-height: 1.4;
+		  }
     </style>
 </head>
 <body>
@@ -116,9 +136,12 @@
         </div>
         <div>
             <a href="contacts.html" style="text-decoration: none; color: inherit;">
-                <div style="width: 50px; height: 50px; background-color: #DAE8FF; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                    👤
-                </div>
+				<div class="icon-with-badge">
+					<div style="width: 50px; height: 50px; background-color: #DAE8FF; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+						👤
+					</div>
+					<span class="notification-badge">1</span>
+				</div>
                 <p>联系人</p>
             </a>
         </div>
